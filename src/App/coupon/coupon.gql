@@ -1,0 +1,13 @@
+#If you're creating your module with name coupon create a Gql Schema File with same name else it won't be able to load GQL Schema for your App.
+
+# Coupon
+type Coupon {
+  name: String
+  code: String
+  discount: Int
+}
+# The "Query" type is special: it lists all of the available queries that
+# clients can execute, along with the return type for each. In this
+extend type Query {
+  coupons: [Coupon]
+}

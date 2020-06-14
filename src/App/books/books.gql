@@ -1,0 +1,15 @@
+#If you're creating your module with name books create a Gql Schema File with same name else it won't be able to load GQL Schema for your App.
+# This "Book" type defines the queryable fields for every book in our data source.
+type Book {
+  title: String
+  author: String
+  onDiscount: Boolean
+  coupon: Coupon
+}
+
+# The "Query" type is special: it lists all of the available queries that
+# clients can execute, along with the return type for each. In this
+extend type Query {
+  books: [Book]
+  book(author: String!): Book
+}

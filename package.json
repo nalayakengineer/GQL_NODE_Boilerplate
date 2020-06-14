@@ -1,0 +1,35 @@
+{
+  "name": "gql",
+  "version": "1.0.0",
+  "description": "Hello World With GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon --exec yarn restart",
+    "restart": "rimraf dist && yarn build && yarn start",
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "author": "Bharat Bhushan",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.2.5",
+    "graphql": "^15.1.0",
+    "graphql-tools": "^4.0.3",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/cli": "^7.0.0",
+    "graphql-codegen-core": "^0.14.5",
+    "prettier": "^1.15.2",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^23.4.2"
+  }
+}
