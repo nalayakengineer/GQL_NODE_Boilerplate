@@ -14,9 +14,7 @@ export const start = async () => {
                 query: Query
             }
             type Query {
-                coupon: [Coupon]
                 books: [Book]
-                book(author: String!): Book
             }
     `
 
