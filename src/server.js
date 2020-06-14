@@ -25,7 +25,7 @@ export const start = async () => {
     // definition and your set of resolvers.
     const server = new ApolloServer({
         typeDefs: [rootSchema, ...AppSchema],
-        resolvers: merge({}, book, books),
+        resolvers: merge({}, book, books, coupon),
     })
 
 
