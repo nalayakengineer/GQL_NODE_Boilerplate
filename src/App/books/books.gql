@@ -9,7 +9,7 @@ type Book {
 
 # The "Query" type is special: it lists all of the available queries that
 # clients can execute, along with the return type for each. In this
-extend type Query {
-  books: [Book]
-  book(author: String!): Book
-}
+# extend type Query {
+#   books: [Book]
+#   book(author: String!): Book
+# }

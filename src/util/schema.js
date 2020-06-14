@@ -3,7 +3,6 @@ import path from 'path'
 
 export const loadTypeSchema = type =>
     new Promise((resolve, reject) => {
-        console.log(type);
 
         const pathToSchema = path.join(
             process.cwd(),

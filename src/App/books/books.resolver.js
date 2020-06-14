@@ -1,13 +1,13 @@
-import { Books, Coupons } from '../../db/tempdata'
+import tempdata from '../../db/tempdata'
 
 
 //Create resplover for each query type
 const books = () => {
-    return Books
+    return tempdata.Books
 }
 
-const book = (_, author) => {
-    var value = Books.find(book => book.author === args.author);
+const book = (_, args) => {
+    var value = tempdata.Books.find(book => book.author === args.author);
     return value;
 }
 
@@ -17,6 +17,5 @@ export default {
     Query: {
         book,
         books
-    },
-    Mutation: {}
+    }
 }
