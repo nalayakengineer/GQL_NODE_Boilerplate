@@ -12,7 +12,7 @@
   "author": "Bharat Bhushan",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.2.5",
+    "apollo-server": "^2.25.3",
     "graphql": "^15.1.0",
     "graphql-tools": "^4.0.3",
     "lodash": "^4.17.21"
